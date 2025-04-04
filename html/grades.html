@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WESTERN INSTITUTE OF TECHNOLOGY</title>
+    <link rel="stylesheet" href="../css/grades.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="../images/witlogo.png" alt="WIT Logo" class="logo">
+            <a href="../index.html"><h1>WESTERN INSTITUTE OF TECHNOLOGY</h1></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="../html/dashboard.html">🏠 Dashboard</a>
+        <div class="dropdown">
+            <a href="#">👤 Profile</a>
+            <div class="dropdown-content">
+                <a href="../html/personaldata.html">Personal Data</a>
+                <a href="../html/schedule.html">Schedule Plot</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📚 Courses</a>
+            <div class="dropdown-content">
+                <a href="../html/current.html">Currently Taken Courses</a>
+                <a href="../html/curriculum.html">Course Curriculum</a>
+                <a href="../html/calendar.html">School Calendar</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📊 Grades</a>
+            <div class="dropdown-content">
+                <a href="../html/grades.html">Course Grades</a>
+                <a href="../html/attendance.html">Attendance Record</a>
+                <a href="../html/extra.html">Extra Curricular Activities</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">✉️ Messages</a>
+            <div class="dropdown-content">
+                <a href="../html/assign.html">Assignments</a>
+                <a href="../html/forums.html">Forums and Discussions</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💳 Payments </a>
+            <div class="dropdown-content">
+                <a href="../html/tuition.html">Tuition Fee (RF)</a>
+                <a href="../html/scholarship.html">Scholarship Application</a>
+                <a href="../html/paymenthis.html">Payment History</a>
+                <a href="../html/statement.html">Statement of Account</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💼 Services </a>
+            <div class="dropdown-content">
+                <a href="../html/contact.html">Contact Page</a>
+                <a href="../html/health.html">Health and Wellness</a>
+                <a href="../html/library.html">Library</a>
+                <a href="../html/clinic.html">Clinic</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="../html/login.html">🚪 Logout</a>
+        </div>
+
+    </nav>
+    
+    
+
+<div class="container">
+    <h2>My Grades</h2>
+
+    <!-- School Year Selection -->
+    <label for="school-year">SY:</label>
+    <select id="school-year">
+        <option>2024 - 2025</option>
+    </select>
+
+    <!-- Term Navigation -->
+    <div class="terms">
+        <a href="#">1st Sem</a>
+        <a href="#">2nd Sem</a>
+    </div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Courses</th>
+                <th>Section</th>
+                <th>Grade</th>
+                <th>Unit</th>
+                <th>Completion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Engl Plus</td>
+                <td>Section 2</td>
+                <td>1.1</td>
+                <td>3</td>
+                <td>1.1</td>
+            </tr>
+            <tr>
+                <td>ITE Math 0</td>
+                <td>Section 2</td>
+                <td>1.5</td>
+                <td>3</td>
+                <td>1.5</td>
+            </tr>
+            <tr>
+                <td>Engl 1</td>
+                <td>Section 2</td>
+                <td>1.4</td>
+                <td>3</td>
+                <td>1.4</td>
+            </tr>
+            <tr>
+                <td>SS 1</td>
+                <td>Section 2</td>
+                <td>1.7</td>
+                <td>3</td>
+                <td>1.7</td>
+            </tr>
+            <tr>
+                <td>ITCC 111</td>
+                <td>Section 2</td>
+                <td>1.3</td>
+                <td>3</td>
+                <td>1.3</td>
+            </tr>
+            <tr>
+                <td>ITCC 112</td>
+                <td>Section 2</td>
+                <td>1.6</td>
+                <td>3</td>
+                <td>1.6</td>
+            </tr>
+            <tr>
+                <td>ITGE 1</td>
+                <td>Section 2</td>
+                <td>1.5</td>
+                <td>3</td>
+                <td>1.5</td>
+            </tr>
+            <tr>
+                <td>NSTP 1</td>
+                <td>Section 2</td>
+                <td>P</td>
+                <td>3</td>
+                <td>P</td>
+            </tr>
+            <tr>
+                <td>PATHFit 1</td>
+                <td>Section 2</td>
+                <td>P</td>
+                <td>2</td>
+                <td>P</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Summary Boxes -->
+    <div class="summary">
+        <div><strong>Units Considered</strong><br>9.5</div>
+        <div><strong>Quarterly Wtd. Average</strong><br>1.4</div>
+        <div><strong>Running Average</strong><br>1.4</div>
+    </div>
+
+    <div class="summary">
+        <div><strong>Readmission Status</strong><br>OK</div>
+        <div><strong>Academic Status</strong><br>ACADEMIC GOOD STANDING</div>
+        <div><strong>Academic Remarks</strong><br>OK</div>
+    </div>
+
+    <!-- Error Reporting -->
+    <p class="note">
+        <strong>Note:</strong> If you encounter errors, please report it directly to the 
+        <a href="#">WIT Administrator</a>.
+    </p>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Western Institute of Technology. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

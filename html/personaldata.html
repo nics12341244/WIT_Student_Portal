@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Data </title>
+    <link rel="stylesheet" href="../css/personal.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="../images/witlogo.png" alt="WIT Logo" class="logo">
+            <a href="../index.html"><h1>WESTERN INSTITUTE OF TECHNOLOGY</h1></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="../html/dashboard.html">🏠 Dashboard</a>
+        <div class="dropdown">
+            <a href="#">👤 Profile</a>
+            <div class="dropdown-content">
+                <a href="../html/personaldata.html">Personal Data</a>
+                <a href="../html/schedule.html">Schedule Plot</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📚 Courses</a>
+            <div class="dropdown-content">
+                <a href="../html/current.html">Currently Taken Courses</a>
+                <a href="../html/curriculum.html">Course Curriculum</a>
+                <a href="../html/calendar.html">School Calendar</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📊 Grades</a>
+            <div class="dropdown-content">
+                <a href="../html/grades.html">Course Grades</a>
+                <a href="../html/attendance.html">Attendance Record</a>
+                <a href="../html/extra.html">Extra Curricular Activities</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">✉️ Messages</a>
+            <div class="dropdown-content">
+                <a href="../html/assign.html">Assignments</a>
+                <a href="../html/forums.html">Forums and Discussions</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💳 Payments </a>
+            <div class="dropdown-content">
+                <a href="../html/tuition.html">Tuition Fee (RF)</a>
+                <a href="../html/scholarship.html">Scholarship Application</a>
+                <a href="../html/paymenthis.html">Payment History</a>
+                <a href="../html/statement.html">Statement of Account</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💼 Services </a>
+            <div class="dropdown-content">
+                <a href="../html/contact.html">Contact Page</a>
+                <a href="../html/health.html">Health and Wellness</a>
+                <a href="../html/library.html">Library</a>
+                <a href="../html/clinic.html">Clinic</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="../html/login.html">🚪 Logout</a>
+        </div>
+
+    </nav>
+    
+    
+
+    <div class="form-container">
+        <h1>Personal Data Form</h1>
+        <form id="personalDataForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="middletName">Middle Name:</label>
+            <input type="text" id="middletName" name="middleName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="Sex">Sex:</label>
+            <select id="Sex" name="Sex" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="status">Civil Status:</label>
+            <select id="Status" name="status" required>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+            </select>
+
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <label for="religion">Religion:</label>
+            <input type="text" id="religion" name="religion" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="postalcode">Postal Code:</label>
+            <input type="text" id="postalcode" name="postalcode" required>
+
+            <label for="contactnumber">Contact Number:</label>
+            <input type="text" id="contactnumber" name="contactnumber" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="previousSchool">Previous School:</label>
+            <input type="text" id="previousSchool" name="previousSchool" required>
+
+            <label for="grade">Year:</label>
+            <select id="grade" name="grade" required>
+                <option value="1styear">1st year</option>
+                <option value="2ndyear">2nd year</option>
+                <option value="3rdyear">3rd year</option>
+                <option value="4thyear">4th year</option>
+            </select>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="BSIT">Bachelor of Science in Information Technology (BSIT)</option>
+                <option value="BSAB">Bachelor of Arts in English (AB English)</option>
+                <option value="BSA">Bachelor of Science in Accountancy (BSA)</option>
+                <option value="BSCE">Bachelor of Science in Computer Science (BSCSE)</option>
+                <option value="BSEE">Bachelor of Science in Electrical Engineering (BSEE)</option>
+                <option value="BSME">Bachelor of Science in Mechanical Engineering (BSME)</option>
+                <option value="BSCE">Bachelor of Science in Civil Engineering</option>
+            </select>
+
+            <h1>PARENT/GUARDIAN INFORMATION</h1>
+
+            <label for="guardianName">Parent/Guardian Name:</label>
+            <input type="text" id="guardianName" name="guardianName" required>
+
+            <label for="guardianContact">Contact Number:</label>
+            <input type="text" id="guardianContact" name="guardianContact" required>
+
+            <label for="guardianAddress">Address:</label>
+            <input type="text" id="guardianAddress" name="guardianAddress" required>
+
+            <button type="button" id="saveButton" onclick="saveData()">Save</button>
+            <button type="button" id="editButton" onclick="editData()" style="display:none;">Edit</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Western Institute of Technology. All rights reserved.</p>
+    </footer>
+    <script src="../js/personal.js"></script>
+</body>
+</html>
