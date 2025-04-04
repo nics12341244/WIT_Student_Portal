@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WESTERN INSTITUTE OF TECHNOLOGY</title>
+    <link rel="stylesheet" href="../css/scholarship.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="../images/witlogo.png" alt="WIT Logo" class="logo">
+            <a href="../index.html"><h1>WESTERN INSTITUTE OF TECHNOLOGY</h1></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="../html/dashboard.html">🏠 Dashboard</a>
+        <div class="dropdown">
+            <a href="#">👤 Profile</a>
+            <div class="dropdown-content">
+                <a href="../html/personaldata.html">Personal Data</a>
+                <a href="../html/schedule.html">Schedule Plot</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📚 Courses</a>
+            <div class="dropdown-content">
+                <a href="../html/current.html">Currently Taken Courses</a>
+                <a href="../html/curriculum.html">Course Curriculum</a>
+                <a href="../html/calendar.html">School Calendar</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📊 Grades</a>
+            <div class="dropdown-content">
+                <a href="../html/grades.html">Course Grades</a>
+                <a href="../html/attendance.html">Attendance Record</a>
+                <a href="../html/extra.html">Extra Curricular Activities</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">✉️ Messages</a>
+            <div class="dropdown-content">
+                <a href="../html/assign.html">Assignments</a>
+                <a href="../html/forums.html">Forums and Discussions</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💳 Payments </a>
+            <div class="dropdown-content">
+                <a href="../html/tuition.html">Tuition Fee (RF)</a>
+                <a href="../html/scholarship.html">Scholarship Application</a>
+                <a href="../html/paymenthis.html">Payment History</a>
+                <a href="../html/statement.html">Statement of Account</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💼 Services </a>
+            <div class="dropdown-content">
+                <a href="../html/contact.html">Contact Page</a>
+                <a href="../html/health.html">Health and Wellness</a>
+                <a href="../html/library.html">Library</a>
+                <a href="../html/clinic.html">Clinic</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="../html/login.html">🚪 Logout</a>
+        </div>
+
+    </nav>
+    
+    
+
+<br><br>
+<div class="container">
+    <h2>Scholarship Application</h2>
+    <form id="scholarshipForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="text" id="studentId" placeholder="Student ID" required>
+        <select id="scholarshipType" required>
+            <option value="" disabled selected>Select Scholarship Type</option>
+            <option value="CHED">CHED Scholarship</option>
+            <option value="DOST">DOST Scholarship</option>
+            <option value="Local">Local Government Scholarship</option>
+            <option value="School">School Scholarship</option>
+        </select>
+        <div id="requirements" class="requirements"></div>
+        <textarea id="reason" placeholder="Why do you deserve this scholarship?" required></textarea>
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Western Institute of Technology. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById("scholarshipType").addEventListener("change", function() {
+        const requirements = {
+            "CHED": "1. Certificate of Indigency\n2. High School Report Card\n3. Good Moral Certificate",
+            "DOST": "1. High School Diploma\n2. Proof of Science-Related Achievements\n3. Entrance Exam Results",
+            "Local": "1. Proof of Residency\n2. Income Tax Return of Parents\n3. Barangay Clearance",
+            "School": "1. Certificate of Enrollment\n2. Recommendation Letter\n3. Academic Records"
+        };
+        document.getElementById("requirements").style.display = "block";
+        document.getElementById("requirements").innerText = "Requirements:\n" + requirements[this.value];
+    });
+
+    document.getElementById("scholarshipForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Your application has been submitted successfully!");
+    });
+</script>
+</body>
+</html>
