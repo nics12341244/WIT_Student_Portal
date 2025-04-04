@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WESTERN INSTITUTE OF TECHNOLOGY</title>
+    <link rel="stylesheet" href="../css/forums.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="../images/witlogo.png" alt="WIT Logo" class="logo">
+            <a href="../index.html"><h1>WESTERN INSTITUTE OF TECHNOLOGY</h1></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="../html/dashboard.html">🏠 Dashboard</a>
+        <div class="dropdown">
+            <a href="#">👤 Profile</a>
+            <div class="dropdown-content">
+                <a href="../html/personaldata.html">Personal Data</a>
+                <a href="../html/schedule.html">Schedule Plot</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📚 Courses</a>
+            <div class="dropdown-content">
+                <a href="../html/current.html">Currently Taken Courses</a>
+                <a href="../html/curriculum.html">Course Curriculum</a>
+                <a href="../html/calendar.html">School Calendar</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📊 Grades</a>
+            <div class="dropdown-content">
+                <a href="../html/grades.html">Course Grades</a>
+                <a href="../html/attendance.html">Attendance Record</a>
+                <a href="../html/extra.html">Extra Curricular Activities</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">✉️ Messages</a>
+            <div class="dropdown-content">
+                <a href="../html/assign.html">Assignments</a>
+                <a href="../html/forums.html">Forums and Discussions</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💳 Payments </a>
+            <div class="dropdown-content">
+                <a href="../html/tuition.html">Tuition Fee (RF)</a>
+                <a href="../html/scholarship.html">Scholarship Application</a>
+                <a href="../html/paymenthis.html">Payment History</a>
+                <a href="../html/statement.html">Statement of Account</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💼 Services </a>
+            <div class="dropdown-content">
+                <a href="../html/contact.html">Contact Page</a>
+                <a href="../html/health.html">Health and Wellness</a>
+                <a href="../html/library.html">Library</a>
+                <a href="../html/clinic.html">Clinic</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="../html/login.html">🚪 Logout</a>
+        </div>
+
+    </nav>
+    
+    
+
+<br><br>
+<div class="main-content">
+    <div class="top-nav">
+        <h1>Forums & Discussions</h1>
+    </div>
+
+    <div class="forum-container">
+        <h2>Discussion Topics</h2>
+        <ul class="forum-list">
+            <li><a href="#">📌 General Announcements</a></li>
+            <li><a href="#">💻 IT-Related Discussions</a></li>
+            <li><a href="#">📚 Study Groups</a></li>
+            <li><a href="#">❓ Questions & Help</a></li>
+            <li><a href="#">🗣 Open Discussion</a></li>
+        </ul>
+
+        <h2>Post a Discussion</h2>
+        <form id="postForm">
+            <input type="text" id="postTitle" placeholder="Enter your discussion title" required>
+            <textarea id="postContent" placeholder="Write your message..." required></textarea>
+            <button type="submit">Post</button>
+        </form>
+
+        <h2>Recent Discussions</h2>
+        <div id="discussionFeed">
+            <p>No discussions yet. Start a conversation!</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Western Institute of Technology. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('postForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        let title = document.getElementById('postTitle').value;
+        let content = document.getElementById('postContent').value;
+        
+        if (title && content) {
+            let discussionFeed = document.getElementById('discussionFeed');
+            let newPost = document.createElement('div');
+            newPost.classList.add('discussion-post');
+            newPost.innerHTML = `<h3>${title}</h3><p>${content}</p><hr>`;
+            discussionFeed.prepend(newPost);
+
+            // Clear input fields
+            document.getElementById('postTitle').value = "";
+            document.getElementById('postContent').value = "";
+        }
+    });
+</script>
+</body>
+</html>

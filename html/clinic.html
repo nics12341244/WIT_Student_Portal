@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WESTERN INSTITUTE OF TECHNOLOGY</title>
+    <link rel="stylesheet" href="../css/clinic.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="../images/witlogo.png" alt="WIT Logo" class="logo">
+            <a href="../index.html"><h1>WESTERN INSTITUTE OF TECHNOLOGY</h1></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="../html/dashboard.html">🏠 Dashboard</a>
+        <div class="dropdown">
+            <a href="#">👤 Profile</a>
+            <div class="dropdown-content">
+                <a href="../html/personaldata.html">Personal Data</a>
+                <a href="../html/schedule.html">Schedule Plot</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📚 Courses</a>
+            <div class="dropdown-content">
+                <a href="../html/current.html">Currently Taken Courses</a>
+                <a href="../html/curriculum.html">Course Curriculum</a>
+                <a href="../html/calendar.html">School Calendar</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📊 Grades</a>
+            <div class="dropdown-content">
+                <a href="../html/grades.html">Course Grades</a>
+                <a href="../html/attendance.html">Attendance Record</a>
+                <a href="../html/extra.html">Extra Curricular Activities</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">✉️ Messages</a>
+            <div class="dropdown-content">
+                <a href="../html/assign.html">Assignments</a>
+                <a href="../html/forums.html">Forums and Discussions</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💳 Payments </a>
+            <div class="dropdown-content">
+                <a href="../html/tuition.html">Tuition Fee (RF)</a>
+                <a href="../html/scholarship.html">Scholarship Application</a>
+                <a href="../html/paymenthis.html">Payment History</a>
+                <a href="../html/statement.html">Statement of Account</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💼 Services </a>
+            <div class="dropdown-content">
+                <a href="../html/contact.html">Contact Page</a>
+                <a href="../html/health.html">Health and Wellness</a>
+                <a href="../html/library.html">Library</a>
+                <a href="../html/clinic.html">Clinic</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="../html/login.html">🚪 Logout</a>
+        </div>
+
+    </nav>
+    
+    
+
+<br><br>
+<div class="main-content">
+    <h1>Welcome to the Clinic</h1>
+    <div class="clinic-info">
+        <h2>Clinic Information</h2>
+        <p>Our campus clinic provides healthcare services to all students. The clinic is open from Monday to Friday, 8:00 AM - 4:00 PM. For emergencies, please contact campus security or visit the nearest hospital.</p>
+    </div>
+
+    <div class="appointment-form">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <label for="patient-name">Full Name:</label>
+            <input type="text" id="patient-name" name="patient-name" required>
+
+            <label for="appointment-date">Appointment Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="reason">Reason for Visit:</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+
+            <button type="submit">Submit Appointment</button>
+        </form>
+    </div>
+
+    <div class="clinic-services">
+        <h2>Services Offered</h2>
+        <ul>
+            <li>Routine Check-ups</li>
+            <li>First Aid</li>
+            <li>Vaccinations</li>
+            <li>Emergency Care</li>
+            <li>Health Counseling</li>
+        </ul>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Western Institute of Technology. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

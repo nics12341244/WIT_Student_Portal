@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WESTERN INSTITUTE OF TECHNOLOGY</title>
+    <link rel="stylesheet" href="../css/extra.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="../images/witlogo.png" alt="WIT Logo" class="logo">
+            <a href="../index.html"><h1>WESTERN INSTITUTE OF TECHNOLOGY</h1></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="../html/dashboard.html">🏠 Dashboard</a>
+        <div class="dropdown">
+            <a href="#">👤 Profile</a>
+            <div class="dropdown-content">
+                <a href="../html/personaldata.html">Personal Data</a>
+                <a href="../html/schedule.html">Schedule Plot</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📚 Courses</a>
+            <div class="dropdown-content">
+                <a href="../html/current.html">Currently Taken Courses</a>
+                <a href="../html/curriculum.html">Course Curriculum</a>
+                <a href="../html/calendar.html">School Calendar</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">📊 Grades</a>
+            <div class="dropdown-content">
+                <a href="../html/grades.html">Course Grades</a>
+                <a href="../html/attendance.html">Attendance Record</a>
+                <a href="../html/extra.html">Extra Curricular Activities</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">✉️ Messages</a>
+            <div class="dropdown-content">
+                <a href="../html/assign.html">Assignments</a>
+                <a href="../html/forums.html">Forums and Discussions</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💳 Payments </a>
+            <div class="dropdown-content">
+                <a href="../html/tuition.html">Tuition Fee (RF)</a>
+                <a href="../html/scholarship.html">Scholarship Application</a>
+                <a href="../html/paymenthis.html">Payment History</a>
+                <a href="../html/statement.html">Statement of Account</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">💼 Services </a>
+            <div class="dropdown-content">
+                <a href="../html/contact.html">Contact Page</a>
+                <a href="../html/health.html">Health and Wellness</a>
+                <a href="../html/library.html">Library</a>
+                <a href="../html/clinic.html">Clinic</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="../html/login.html">🚪 Logout</a>
+        </div>
+
+    </nav>
+    
+    
+
+<br><br>
+<div class="main-content">
+    <div class="top-nav">
+        <h1>Extra-Curricular Activities</h1>
+    </div>
+
+    <div class="activities-container">
+        <h2>Your Activities</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Activity</th>
+                    <th>Date</th>
+                    <th>Plus Points</th>
+                </tr>
+            </thead>
+            <tbody id="activities-list">
+                <!-- Activities will be dynamically added here -->
+            </tbody>
+        </table>
+
+        <h3>Total Plus Points: <span id="total-points">0</span></h3>
+
+        <h2>Add New Activity</h2>
+        <input type="text" id="activity-name" placeholder="Activity Name">
+        <input type="date" id="activity-date">
+        <input type="number" id="activity-points" placeholder="Plus Points">
+        <button onclick="addActivity()">Add Activity</button>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Western Institute of Technology. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
